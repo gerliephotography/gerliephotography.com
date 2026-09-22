@@ -74,6 +74,14 @@
                     <img src="gerlie 1.jpeg" alt="Graduation Ad">
                     <div class="img-hover"><span>Editorial</span></div>
                 </div>
+                <div class="masonry-item">
+                    <img src="244B6FF2-B321-4270-84B8-C1C3433FE5AE.jpeg" alt="Indoor Portrait">
+                    <div class="img-hover"><span>Portraits</span></div>
+                </div>
+                <div class="masonry-item">
+                    <img src="4C99C2FF-7422-4150-A026-E107BF0023A9.jpeg" alt="Outdoor Portrait">
+                    <div class="img-hover"><span>Outdoor Portraits</span></div>
+                </div>
             </div>
         </div>
     </section>
@@ -110,7 +118,7 @@
                     <h3>Essential Session</h3>
                     <ul>
                         <li>1 Hour Session</li>
-                        <li>15 High-Res Edited Digital Shots</li>
+                        <li>10 High-Res Edited Digital Shots</li>
                         <li>1 Location of choice</li>
                         <li>Online Gallery Access</li>
                     </ul>
@@ -121,7 +129,7 @@
                     <h3>Precious Premium</h3>
                     <ul>
                         <li>3 Hours Coverage</li>
-                        <li>45 High-Res Edited Digital Shots</li>
+                        <li>30 High-Res Edited Digital Shots</li>
                         <li>2 Locations / Outfit Changes</li>
                         <li>Private Online Gallery</li>
                     </ul>
@@ -147,15 +155,24 @@
             <h2 class="section-title">Let's Create Magic</h2>
             <p class="section-subtitle">Ready to lock in your date? Drop your details below.</p>
             
-            <form class="booking-form">
+            <form class="booking-form" action="https://formsubmit.co/gerliephotography@gmail.com" method="post">
+                <input type="hidden" name="_subject" value="New Booking Request - Gerliephotography">
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_template" value="table">
                 <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
+                    <label for="client-name">Your Name</label>
+                    <input id="client-name" name="client_name" type="text" placeholder="Your Name" autocomplete="name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" placeholder="Email Address" required>
+                    <label for="client-phone">Phone Number</label>
+                    <input id="client-phone" name="client_phone" type="tel" placeholder="Phone Number" autocomplete="tel" required>
                 </div>
                 <div class="form-group">
-                    <select required>
+                    <label for="client-email">Email Address</label>
+                    <input id="client-email" name="client_email" type="email" placeholder="Email Address" autocomplete="email" required>
+                </div>
+                <div class="form-group">
+                    <select id="session-type" name="session_type" required>
                         <option value="" disabled selected>Select Session Type</option>
                         <option value="portrait">Portrait / Studio</option>
                         <option value="wedding">Wedding / Engagement</option>
@@ -164,7 +181,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <textarea rows="5" placeholder="Tell us about your vision (Date, location, ideas...)" required></textarea>
+                    <textarea id="booking-message" name="booking_message" rows="5" placeholder="Tell us about your vision (Date, location, ideas...)" required></textarea>
                 </div>
                 <button type="submit" class="btn primary-btn btn-block">Secure My Date</button>
             </form>
