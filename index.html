@@ -49,38 +49,47 @@
             <h2 class="section-title">The Gallery</h2>
             <p class="section-subtitle">A glimpse into visual stories we've frozen in time.</p>
             
+            <!-- Gallery Filter Buttons -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="outdoor">Outdoor Shoots</button>
+                <button class="filter-btn" data-filter="portrait">Portraits</button>
+                <button class="filter-btn" data-filter="professional">Professional</button>
+                <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+            </div>
+            
             <div class="masonry-grid">
-                <div class="masonry-item">
+                <div class="masonry-item" data-category="outdoor">
                     <img src="out door shots.jpg" alt="Out Door Shots">
-                    <div class="img-hover"><span>Outdoors</span></div>
+                    <div class="img-hover"><span>Outdoor Shoots</span></div>
                 </div>
-                <div class="masonry-item">
+                <div class="masonry-item" data-category="portrait">
                     <img src="afro shoots.jpg" alt="Afro Shoots">
                     <div class="img-hover"><span>Portraits</span></div>
                 </div>
-                <div class="masonry-item">
+                <div class="masonry-item" data-category="professional">
                     <img src="men professional shoots.jpg" alt="Men Professional Shoots">
-                    <div class="img-hover"><span>Studio</span></div>
+                    <div class="img-hover"><span>Professional</span></div>
                 </div>
-                <div class="masonry-item">
+                <div class="masonry-item" data-category="lifestyle">
                     <img src="men shoots.jpg" alt="Men Shoots">
                     <div class="img-hover"><span>Lifestyle</span></div>
                 </div>
-                <div class="masonry-item">
+                <div class="masonry-item" data-category="professional">
                     <img src="professional portraits.jpg" alt="Professional Portraits">
-                    <div class="img-hover"><span>Commercial</span></div>
+                    <div class="img-hover"><span>Professional</span></div>
                 </div>
-                <div class="masonry-item">
+                <div class="masonry-item" data-category="portrait">
                     <img src="gerlie 1.jpeg" alt="Graduation Ad">
-                    <div class="img-hover"><span>Editorial</span></div>
+                    <div class="img-hover"><span>Portraits</span></div>
                 </div>
-                <div class="masonry-item">
+                <div class="masonry-item" data-category="portrait">
                     <img src="244B6FF2-B321-4270-84B8-C1C3433FE5AE.jpeg" alt="Indoor Portrait">
                     <div class="img-hover"><span>Portraits</span></div>
                 </div>
-                <div class="masonry-item">
+                <div class="masonry-item" data-category="outdoor">
                     <img src="4C99C2FF-7422-4150-A026-E107BF0023A9.jpeg" alt="Outdoor Portrait">
-                    <div class="img-hover"><span>Outdoor Portraits</span></div>
+                    <div class="img-hover"><span>Outdoor</span></div>
                 </div>
             </div>
         </div>
@@ -95,8 +104,8 @@
             </div>
             <div class="about-text">
                 <h2 class="section-title">Behind The Lens</h2>
-                <p>At <strong>Gerliephotography</strong>, We don't just take pictures; We freeze time. Guided by a passion for pure storytelling and a keen eye for genuine, unscripted emotion, we specialize in turning ordinary instances into precious, lifelong masterpieces.</p>
-                <p>Whether it’s the quiet magic of a portrait session or the high-energy romance of a wedding day, your moments are safe in our hands.</p>
+                <p>At <strong>Gerliephotography</strong>, We don't just take pictures; We freeze time. Guided by a passion for pure storytelling and a keen eye for genuine, unscripted emotion, we [...]
+                <p>Whether it's the quiet magic of a portrait session or the high-energy romance of a wedding day, your moments are safe in our hands.</p>
             </div>
         </div>
     </section>
@@ -175,6 +184,7 @@
                     <select id="session-type" name="session_type" required>
                         <option value="" disabled selected>Select Session Type</option>
                         <option value="portrait">Portrait / Studio</option>
+                        <option value="outdoor">Outdoor Session</option>
                         <option value="wedding">Wedding / Engagement</option>
                         <option value="event">Corporate / Event</option>
                         <option value="commercial">Commercial</option>
@@ -196,5 +206,6 @@
         <p>&copy; 2026 Gerliephotography. All Rights Reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
